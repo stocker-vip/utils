@@ -1,0 +1,2 @@
+export const codeWithNumber = (code:string)=> code.startsWith("6") || code.startsWith("5")  ? `1.${code}` : `0.${code}`
+export const codeWithSymbol = (code:string)=> code.startsWith("6") || code.startsWith("5")  ? `sh${code}` : `sz${code}`
