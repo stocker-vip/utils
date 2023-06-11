@@ -1,4 +1,4 @@
-import { SUB } from ".."
+import { SUB } from "../index.ts"
 
 // 最新有没有cross
 export const Cross = (line1:number[],line2:number[])=>{

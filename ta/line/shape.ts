@@ -1,4 +1,4 @@
-import { SUB } from "..";
+import { SUB } from "../index.ts";
 
 export const Shape = (line1:number[],line2:number[])=>{
     const line = SUB(line1,line2)
