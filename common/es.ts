@@ -14,6 +14,11 @@ export class EventSourceControl {
       }
   
       this.eventSource = new EventSource(this.url);
+      this.eventSource.onerror = (event) => {
+        console.error("连接发生错误：", event);
+        this.eventSource = undefined;
+        this.start()
+      }
   
       // 注册事件处理函数
       for (const [eventName, eventHandler] of Object.entries(this.eventHandlers)) {
